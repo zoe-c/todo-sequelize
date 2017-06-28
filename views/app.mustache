@@ -19,11 +19,12 @@
           </form>
 
          <!--you place the varName around the li, not the ul, because mustache will render each like .map would.  -->
-           <ul class="toDo">
+          <ul class="toDo">
               {{#Todo}}
               <li> <input type="checkbox" class="task"> {{task}} </li>
               {{/Todo}}
            </ul>
+
 
 
          </ul>
