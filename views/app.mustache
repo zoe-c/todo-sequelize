@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>To Do List</title>
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1>TO DO</h1>
+          <p>Let's make it happen!</p>
+          <form id= "todo" action="/" method="post">
+            <input type="text" name="task" placeholder="What to add?"/>
+            <button type="submit" value="Submit">SUBMIT</button>
+          </form>
+
+         <!--you place the varName around the li, not the ul, because mustache will render each like .map would.  -->
+           <ul class="toDo">
+              {{#Todo}}
+              <li> <input type="checkbox" class="task"> {{task}} </li>
+              {{/Todo}}
+           </ul>
+
+
+         </ul>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
